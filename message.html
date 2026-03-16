@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Untuk Kamu</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<audio id="bgMusic" loop>
+<source src="assets/music.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicBtn">🎵</button>
+
+<canvas id="confetti"></canvas>
+
+<div class="messageContainer">
+
+<img src="assets/images/foto.jpg" class="photo">
+
+<h1 id="title">selamat ulang tahun kak yang ke 26 🎉</h1>
+
+<p class="text">
+</p>
+
+<p class="text">
+🎉 Ucapan Ulang Tahun,
+
+Selamat ulang tahun, Kak.
+Hari ini mungkin hanya satu hari dari sekian banyak hari yang sudah Kak lewati, tapi buat iki hari ini terasa spesial. Karena hari ini adalah hari di mana seseorang yang sangat berarti di hidup iki dilahirkan.
+
+Terima kasih sudah selalu ada. Terima kasih sudah menjadi kakak yang sabar, yang sering membantu, yang kadang diam-diam menjaga tanpa banyak bicara. Mungkin iki jarang mengatakannya secara langsung, tapi sebenarnya iki sangat bersyukur punya kakak seperti Kak.
+
+Semoga di umur yang baru ini, semua hal baik datang menghampiri Kak. Semoga langkah Kak selalu dipermudah, rezeki Kak dilancarkan, dan hati Kak selalu dipenuhi kebahagiaan.
+
+Dan kalau suatu hari Kak merasa lelah atau dunia terasa berat, ingat saja… Kak tidak sendirian. Iki selalu ada di sini.
+</p>
+
+<p class="text">
+ 🌙 Puisi untuk Kakak,
+
+Di antara banyak orang yang hadir dalam hidup iki,
+
+ada satu yang selalu terasa dekat meski tanpa banyak kata.
+Dia yang sering terlihat kuat,
+meski mungkin hatinya juga pernah lelah.
+
+Dia yang kadang diam,
+tapi diamnya penuh perhatian.
+
+Hari ini usia Kak bertambah.
+Bukan hanya angka yang berubah,
+tapi juga cerita yang semakin panjang.
+
+Semoga langkah Kak selalu menemukan jalan yang baik,
+
+semoga harapan-harapan kecil yang Kak simpan
+pelan-pelan berubah menjadi kenyataan.
+Dan jika suatu hari langit terasa gelap,
+ingatlah…
+
+ada iki di sini
+yang selalu mendoakan kebahagiaan Kak.
+Selamat ulang tahun, Kak.
+
+Semoga hidup Kak selalu dipenuhi kebahagiaan.❤️
+</p>
+
+</div>
+
+<div class="balloon" style="left:15%">🎈</div>
+<div class="balloon" style="left:45%">🎈</div>
+<div class="balloon" style="left:75%">🎈</div>
+
+<script>
+
+const music = document.getElementById("bgMusic");
+const btn = document.getElementById("musicBtn");
+
+let playing = false;
+
+btn.onclick = function(){
+
+if(!playing){
+music.play();
+btn.innerHTML="⏸";
+playing=true;
+}else{
+music.pause();
+btn.innerHTML="🎵";
+playing=false;
+}
+
+}
+
+</script>
+
+</body>
+</html>
