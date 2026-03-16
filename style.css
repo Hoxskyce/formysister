@@ -1,0 +1,264 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:sans-serif;
+}
+
+/* ================= */
+/* BODY */
+/* ================= */
+
+body{
+
+background: linear-gradient(180deg,#ff9a9e,#fad0c4);
+min-height:100vh;
+text-align:center;
+overflow-x:hidden;
+
+}
+
+/* ================= */
+/* MINI GAME */
+/* ================= */
+
+.gameContainer{
+
+padding-top:60px;
+
+}
+
+#score{
+
+font-size:22px;
+margin-top:10px;
+color:white;
+
+}
+
+.heart{
+
+position:absolute;
+bottom:-20px;
+font-size:32px;
+cursor:pointer;
+animation:rise 4s linear forwards;
+
+}
+
+@keyframes rise{
+
+0%{
+transform:translateY(0);
+}
+
+100%{
+transform:translateY(-120vh);
+}
+
+}
+
+#nextBtn{
+
+display:none;
+margin-top:25px;
+
+}
+
+/* ================= */
+/* WISH PAGE */
+/* ================= */
+
+.wishContainer{
+
+padding-top:100px;
+
+}
+
+.wishText{
+
+font-size:38px;
+color:white;
+margin-bottom:20px;
+
+text-shadow:0 4px 10px rgba(0,0,0,0.25);
+
+animation:fadeIn 2s;
+
+}
+
+.wishSub{
+
+margin-top:20px;
+font-size:18px;
+color:white;
+opacity:0.9;
+
+}
+
+/* kue */
+
+.cake{
+
+font-size:140px;
+animation:cakeMove 3s infinite ease-in-out;
+
+}
+
+/* animasi kue */
+
+@keyframes cakeMove{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-10px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+
+/* lilin */
+
+.candle{
+
+font-size:40px;
+animation:fire 1s infinite alternate;
+
+}
+
+/* animasi api lilin */
+
+@keyframes fire{
+
+from{
+transform:scale(1);
+}
+
+to{
+transform:scale(1.2);
+}
+
+}
+
+/* ================= */
+/* MESSAGE PAGE */
+/* ================= */
+
+.messageContainer{
+
+padding:40px;
+max-width:600px;
+margin:auto;
+
+}
+
+.photo{
+
+width:200px;
+border-radius:20px;
+margin-bottom:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+
+animation:zoom 1.5s;
+
+}
+
+/* animasi foto */
+
+@keyframes zoom{
+
+0%{
+transform:scale(0);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+/* ================= */
+/* BUTTON STYLE */
+/* ================= */
+
+button{
+
+padding:12px 28px;
+border:none;
+border-radius:30px;
+
+background:linear-gradient(45deg,#ff6b81,#ff8fa3);
+
+color:white;
+
+font-size:18px;
+font-weight:bold;
+
+cursor:pointer;
+
+box-shadow:0 6px 15px rgba(0,0,0,0.2);
+
+transition:all .25s ease;
+
+margin-top:20px;
+
+}
+
+/* hover */
+
+button:hover{
+
+transform:translateY(-3px);
+box-shadow:0 10px 20px rgba(0,0,0,0.25);
+
+}
+
+/* klik */
+
+button:active{
+
+transform:scale(.95);
+
+}
+
+/* ================= */
+/* CONFETTI CANVAS */
+/* ================= */
+
+canvas{
+
+position:fixed;
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+pointer-events:none;
+
+}
+
+/* ================= */
+/* FADE ANIMATION */
+/* ================= */
+
+@keyframes fadeIn{
+
+0%{
+opacity:0;
+transform:translateY(-20px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+
+}
